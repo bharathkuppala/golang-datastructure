@@ -31,6 +31,13 @@ func (l *linkedList) addValue(s string) {
 	l.tail = node
 }
 
+func (l *linkedList) removeFront() {
+	if l.head == nil {
+		fmt.Println("list is empty")
+		return
+	}
+}
+
 func main() {
 	ll := initList()
 	ll.addValue("Bharath")
